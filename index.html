@@ -1,26 +1,326 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>javascript-web-canvas</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Portfolio</title>
+  <meta name="description" content="A beautiful static portfolio website">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Creativ<span>.</span></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
 
-    <meta property="og:title" content="javascript-web-canvas" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal-text">Creative Design Solutions</h1>
+          <p class="lead reveal-text delay-1">Transform your ideas into stunning digital experiences with our innovative design approach.</p>
+          <div class="hero-buttons reveal-text delay-2">
+            <a href="#portfolio" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image reveal-slide">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-subtitle">Who we are and what we do</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image reveal-slide">
+            <div class="image-wrapper">
+              <div class="image-bg"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="reveal-text">Crafting Digital Experiences Since 2015</h3>
+            <p class="reveal-text delay-1">We're a creative team passionate about bringing innovative ideas to life. Our approach combines aesthetics with functionality to create meaningful digital experiences.</p>
+            
+            <div class="stats-container reveal-text delay-2">
+              <div class="stat-item">
+                <span class="stat-number" data-count="126">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="89">0</span>
+                <span class="stat-label">Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="8">0</span>
+                <span class="stat-label">Years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section id="services" class="services section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">What we can do for you</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-fade">
+            <div class="service-icon">
+              <div class="icon-bg web-design"></div>
+            </div>
+            <h3>Web Design</h3>
+            <p>Beautiful, responsive websites that engage your audience and represent your brand.</p>
+          </div>
+          <div class="service-card reveal-fade delay-1">
+            <div class="service-icon">
+              <div class="icon-bg ux-design"></div>
+            </div>
+            <h3>UX Design</h3>
+            <p>User-centered design that creates meaningful and relevant experiences.</p>
+          </div>
+          <div class="service-card reveal-fade delay-2">
+            <div class="service-icon">
+              <div class="icon-bg brand-identity"></div>
+            </div>
+            <h3>Brand Identity</h3>
+            <p>Cohesive brand systems that communicate your values and connect with customers.</p>
+          </div>
+          <div class="service-card reveal-fade delay-3">
+            <div class="service-icon">
+              <div class="icon-bg development"></div>
+            </div>
+            <h3>Development</h3>
+            <p>Clean, efficient code that brings designs to life with smooth interactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Portfolio</h2>
+          <p class="section-subtitle">Some of our best work</p>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="ux">UX/UI</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item web" data-category="web">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Mountain Travel</h4>
+                <p>Web Design</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item branding" data-category="branding">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Sunset Cafe</h4>
+                <p>Brand Identity</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item ux" data-category="ux">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Fitness App</h4>
+                <p>UX/UI Design</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web" data-category="web">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Tech Conference</h4>
+                <p>Web Design</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item branding" data-category="branding">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Organic Foods</h4>
+                <p>Brand Identity</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item ux" data-category="ux">
+            <div class="portfolio-image">
+              <div class="image-overlay"></div>
+              <div class="portfolio-info">
+                <h4>Finance Dashboard</h4>
+                <p>UX/UI Design</p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's start a project together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item reveal-fade">
+              <div class="contact-icon location"></div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>123 Design Street, Creative City, 10001</p>
+              </div>
+            </div>
+            <div class="contact-item reveal-fade delay-1">
+              <div class="contact-icon email"></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>hello@creativstudio.com</p>
+              </div>
+            </div>
+            <div class="contact-item reveal-fade delay-2">
+              <div class="contact-icon phone"></div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container reveal-slide">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+              <div id="form-message" class="form-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="#">Creativ<span>.</span></a>
+          </div>
+          <p>Creating beautiful digital experiences that inspire and connect.</p>
+          <div class="social-links">
+            <a href="#" class="social-link facebook"></a>
+            <a href="#" class="social-link twitter"></a>
+            <a href="#" class="social-link instagram"></a>
+            <a href="#" class="social-link linkedin"></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">UX/UI Design</a></li>
+              <li><a href="#">Brand Identity</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for updates</p>
+            <form class="newsletter-form">
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit" class="btn btn-sm">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Creativ Studio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="back-to-top">
+    <div class="arrow-up"></div>
+  </a>
+
+  <script src="script.js"></script>
+</body>
 </html>
